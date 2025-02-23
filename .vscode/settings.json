@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.codeActionsOnSave.mode": "problems",
+    "typescript.preferences.autoImportFileExcludePatterns": [
+      "./**/node_modules/@faker-js/faker"
+    ],
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+  }
+  
