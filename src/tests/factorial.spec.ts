@@ -89,20 +89,20 @@ test.describe('Factorial', () => {
     test(`should ensure when 'about' link is clicked, user is navigated to about page`, async ({ page }) => {
         const factorialPage = new FactorialPage(page);
         await factorialPage.aboutLink.click();
-        expect(page.url()).toContain(BASE_URL + '/about');
+        expect(page.url()).toContain(BASE_URL + 'about');
     });
 
     test(`should ensure when 'Terms and Conditions' link is clicked, user is navigated to terms and conditions page`, async ({ page }) => {
         const factorialPage = new FactorialPage(page);
         await factorialPage.termsLink.click();
-        expect(page.url()).toContain(BASE_URL + '/terms');
+        expect(page.url()).toContain(BASE_URL + 'terms');
     });
 
 
     test(`should ensure when 'Privacy' link is clicked, user is navigated to terms page`, async ({ page }) => {
         const factorialPage = new FactorialPage(page);
         await factorialPage.privacyLink.click();
-        expect(page.url()).toContain(BASE_URL + '/privacy');
+        expect(page.url()).toContain(BASE_URL + 'privacy');
     });
 
     test('should ensure error pops up when empty field is entered ', async ({ page }) => {
