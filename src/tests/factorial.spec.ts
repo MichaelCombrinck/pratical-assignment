@@ -17,7 +17,6 @@ test.describe('Factorial', () => {
         await factorialPage.submitButton.click();
         await page.waitForSelector('#resultDiv');
         const result = await factorialPage.result.textContent();
-        console.log(`Result: ${result}`);
         expect(result).toContain('120');
     })
 
